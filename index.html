@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <title>Наш сайт</title>
+</head>
+
+<body>
+    <!-- Теги h1,h2 ... h6 и тег p -->
+    <div class="">
+        <h1 id="news">Lorem ipsum dolor sit amet.</h1>
+        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, consequatur!</h2>
+        <p> <strong>Lorem ipsum dolor sit</strong> <i>amet consectetur adipisicing</i> <mark> elit.</mark> <br>
+            <hr> Veritatis<br>
+            <hr>voluptas ut, <del>exercitationem</del> , amet quisquam <ins>reprehenderit</ins> vero eveniet quibusdam
+            reiciendis <sub>debitis</sub> , impedit <sup>cum</sup> sed vitae rerum quos harum deserunt doloremque
+            distinctio.
+        </p>
+        <br>
+    </div>
+    <!-- списки маркированные и нумерованные -->
+    <div class="">
+        <br>
+        <ul type="A">
+            <li>
+                Хлеба:
+                <ul type="A">
+                    <li>белый хлеб</li>
+                    <li>темный хлеб</li>
+                </ul>
+            </li>
+            <li>молоко</li>
+        </ul>
+        <br>
+    </div>
+    <div class="">
+        <br>
+        <ol type="I" start="3">
+            <li>хлеб</li>
+            <li>молоко</li>
+        </ol>
+        <br>
+    </div>
+    <!-- списки с описаниями -->
+    <div class="">
+        <br>
+        <dl>
+            <dt>HTML</dt>
+            <dd>Язык гипертекстовой разметки</dd>
+            <dt>CSS</dt>
+            <dd>Каскадные таблицы стилей</dd>
+        </dl>
+        <br>
+    </div>
+    <!-- Ссылки -->
+    <div class="">
+        <br>
+        <a href="/catalog.html">Каталог</a>
+        <a href="mailto:asfasf@mail.ru">asfasf@mail.ru</a>
+        <a href="tel:79954244242">+7 (995) 424 42 42</a>
+        <a href="#news">Новости</a>
+        <a href="https://vk.com/feed">Конференция</a>
+        <a rel="noopener noreferrer" target="_blank" href="https://vk.com/feed">Правильная Конференция</a>
+        <br>
+    </div>
+    <!-- Изображения -->
+    <div class="">
+        <br>
+        <img title="Логотип нашего сайта"
+            src="https://img.freepik.com/premium-vector/internet-icon-design-vector-template_1146812-4041.jpg?semt=ais_hybrid"
+            alt="Логотип сайта" width="100px" height="100px">
+        <p>логотип 1 сайта</p>
+        <figure>
+            <img title="Логотип нашего сайта"
+                src="https://img.freepik.com/premium-vector/vector-branding-identity-corporate-vector-design_828267-189.jpg?semt=ais_hybrid&w=740"
+                alt="Логотип 2 сайта" width="100px" height="100px">
+            <figcaption>Логотип второго сайта</figcaption>
+        </figure>
+        <br>
+    </div>
+    <!-- Таблицы -->
+    <div  class="">
+        <br>
+        <table border="1">
+            <caption>Список студентов</caption>
+            <tr>
+                <th>Имя</th>
+                <th>Возраст</th>
+            </tr>
+            <tr>
+                <th>Анна</th>
+                <th>20</th>
+            </tr>
+            <tr>
+                <th>Иван</th>
+                <th>18</th>
+            </tr>
+        </table>
+        <br>
+        <table border="1">
+            <caption>Список покупок</caption>
+            <tr>
+                <th>Продукт</th>
+                <th>цена</th>
+            </tr>
+            <tr>
+                <th>яблоки</th>
+                <th>20 руб.</th>
+            </tr>
+            <tr>
+                <th>Бананы</th>
+                <th>18 руб.</th>
+            </tr>
+            <tr>
+                <td colspan="2">Итого 38 руб.</td>
+            </tr>
+        </table>
+        <br>
+    </div>
+    <!-- Форма -->
+    <div>
+        <br>
+        <form action="/catalog.html" method="post">
+            <fieldset>
+                <legend>Контактная информация:</legend>
+                <label for="UserName">Имя пользователя</label>
+                <input type="text" id="UserName" name="UserName" placeholder="Введите имя">
+                <label for="UserName">Имя пользователя</label>
+                <input type="checkbox" id="UserName" name="UserName" placeholder="Введите имя">
+            </fieldset>
+            <br>
+            <label for="UserName">1</label>
+            <input type="radio" id="UserName" name="UserName" placeholder="Введите имя">
+            <label for="UserName">2</label>
+            <input type="radio" id="UserName" name="UserName" placeholder="Введите имя">
+            <br>
+            <input type="submit" value="Отправить">
+            <br>
+            <input type="reset" value="Сброс">
+            <br>
+            <input type="button" value="Обновить">
+            <br>
+            <br>
+            <label for="textPole">Содержание</label>
+            <textarea name="textPole" rows="5" cols="40" id=""></textarea>
+            <br>
+        </form>
+        <br>
+        <!-- Выподающий список -->
+        <label for="city">Города:</label>
+        <select name="сшен" id="city">
+            <option value="msk">
+                Москва
+            </option>
+            <option selected value="vlg">
+                Волгоград
+            </option>
+        </select>
+        <br>
+    </div>
+    <!-- Базовые теги и структура -->
+    <div>
+        <br>
+        <header>
+            <nav>
+                <li><a href="">Главная</a></li>
+                <li><a href="">Каталог</a></li>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <article>
+
+                </article>
+                <aside></aside>
+            </section>
+        </main>
+        <footer></footer>
+    </div>
+
+</body>
+
+</html>
